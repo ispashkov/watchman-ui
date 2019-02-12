@@ -1,5 +1,5 @@
 import React from 'react';
-import BaseLayout from '../layouts/Base';
+import BaseLayout from '../layouts/Base/Base';
 
 const HomeView: React.FunctionComponent = () => (
   <BaseLayout>

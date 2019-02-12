@@ -1,10 +1,10 @@
 import React from 'react';
 import BaseLayout from '../layouts/Base/Base';
 
-const AnalysisView: React.FunctionComponent = () => (
+const AdminView: React.FunctionComponent = () => (
   <BaseLayout>
-    <h2>Analysis Page</h2>
+    <h2>Admin Page</h2>
   </BaseLayout>
 );
 
-export default AnalysisView;
+export default AdminView;
