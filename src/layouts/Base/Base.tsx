@@ -9,7 +9,7 @@ interface S {
 
 class BaseLayout extends PureComponent<{}, S> {
   state = {
-    openMenu: false
+    openMenu: true,
   };
 
   handleMenuOpen = () => {
@@ -33,7 +33,7 @@ class BaseLayout extends PureComponent<{}, S> {
         <Header title="Watchman" open={openMenu} onClickMenu={this.handleMenuOpen} />
         <Sidebar open={openMenu} onClose={this.handleMenuClose} />
         <Content open={openMenu}>
-          { children }
+          { React.Children.toArray(children) }
         </Content>
       </div>
     );

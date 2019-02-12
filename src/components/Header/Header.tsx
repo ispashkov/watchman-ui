@@ -20,11 +20,11 @@ class Header extends PureComponent<Props> {
           [classes.appBarShift]: open,
         })}>
         <Toolbar>
-          { !open && (
-            <IconButton color="inherit" aria-label="Menu" onClick={onClickMenu}>
-              <MenuIcon />
-            </IconButton>
-          )}
+          {/*{ !open && (*/}
+            {/*<IconButton color="inherit" aria-label="Menu" onClick={onClickMenu}>*/}
+              {/*<MenuIcon />*/}
+            {/*</IconButton>*/}
+          {/*)}*/}
           <Typography variant="h6" color="inherit">
             { title }
           </Typography>

@@ -20,16 +20,16 @@ const Sidebar: React.FunctionComponent<Props> = ({ open, onClose, classes }) => 
     anchor="left"
     variant={"persistent"}
     open={open}
-    onClose={onClose}
+    // onClose={onClose}
     className={classes.root}
     classes={{
       paper: classes.drawerPaper,
     }}
   >
     <div className={classes.drawerHeader}>
-      <IconButton onClick={onClose}>
-        <ChevronLeftIcon />
-      </IconButton>
+      {/*<IconButton onClick={onClose}>*/}
+        {/*<ChevronLeftIcon />*/}
+      {/*</IconButton>*/}
     </div>
     <Divider />
     <List>

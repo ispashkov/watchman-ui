@@ -8,7 +8,7 @@ const Content: React.FunctionComponent<Props> = ({ children, classes, open }) =>
   <main className={classNames(classes.content, {
     [classes.contentShift]: open,
   })}>
-    { children }
+    { React.Children.toArray(children) }
   </main>
 );
 
