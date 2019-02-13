@@ -33,3 +33,9 @@ export const admin: RouteInterface = {
   title: 'Администрирование',
   exact: false
 };
+
+export const auth: RouteInterface = {
+  path: '/auth',
+  title: 'Авторизация',
+  exact: false
+};

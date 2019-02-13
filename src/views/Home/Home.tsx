@@ -26,42 +26,40 @@ const HomeView: React.FunctionComponent<Props> = props => {
   } = props;
 
   return (
-    <BaseLayout>
-      <Grid container>
-        <Grid item xs={12} className={classes.sectionTitle}>
-          <Typography variant="h5" component="h2">Информация о ПК</Typography>
-        </Grid>
-        <Grid item xs={12}>
-          <Panel>
-            <Grid container>
-              <Grid item xs={4} className={classes.info}>
-                <IMacIcon className={classes.IMac} style={macStyle} />
-                <div>
-                  <Typography variant="h6" color="secondary">Online: { online }</Typography>
-                  <Typography variant="h6" color="primary">Всего: { total }</Typography>
-                </div>
-              </Grid>
-              <Grid item xs={4} className={classes.circularItem}>
-                <Circle
-                  color="primary"
-                  value={SLA}
-                  size={circleSize}
-                />
-                <Typography className={classes.circularLabel} variant="subtitle1">Операции в SLA</Typography>
-              </Grid>
-              <Grid item xs={4} className={classes.circularItem}>
-                <Circle
-                  color="secondary"
-                  value={favoritesSLA}
-                  size={circleSize}
-                />
-                <Typography className={classes.circularLabel} variant="subtitle1">Избранные операции в SLA</Typography>
-              </Grid>
-            </Grid>
-          </Panel>
-        </Grid>
+    <Grid container>
+      <Grid item xs={12} className={classes.sectionTitle}>
+        <Typography variant="h5" component="h2">Информация о ПК</Typography>
       </Grid>
-    </BaseLayout>
+      <Grid item xs={12}>
+        <Panel>
+          <Grid container>
+            <Grid item xs={4} className={classes.info}>
+              <IMacIcon className={classes.IMac} style={macStyle} />
+              <div>
+                <Typography variant="h6" color="secondary">Online: { online }</Typography>
+                <Typography variant="h6" color="primary">Всего: { total }</Typography>
+              </div>
+            </Grid>
+            <Grid item xs={4} className={classes.circularItem}>
+              <Circle
+                color="primary"
+                value={SLA}
+                size={circleSize}
+              />
+              <Typography className={classes.circularLabel} variant="subtitle1">Операции в SLA</Typography>
+            </Grid>
+            <Grid item xs={4} className={classes.circularItem}>
+              <Circle
+                color="secondary"
+                value={favoritesSLA}
+                size={circleSize}
+              />
+              <Typography className={classes.circularLabel} variant="subtitle1">Избранные операции в SLA</Typography>
+            </Grid>
+          </Grid>
+        </Panel>
+      </Grid>
+    </Grid>
   );
 };
 

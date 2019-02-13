@@ -16,4 +16,8 @@ export default (theme: Theme & ThemeOptions) => createStyles({
     }),
     marginLeft: theme.drawerWidth,
   },
+  title: {
+    flexGrow: 1,
+    paddingRight: theme.spacing.unit * 2
+  }
 });

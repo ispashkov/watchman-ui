@@ -1,10 +1,7 @@
 import React from 'react';
-import BaseLayout from '../layouts/Base/Base';
 
 const AnalysisView: React.FunctionComponent = () => (
-  <BaseLayout>
-    <h2>Analysis Page</h2>
-  </BaseLayout>
+  <h2>Analysis Page</h2>
 );
 
 export default AnalysisView;
